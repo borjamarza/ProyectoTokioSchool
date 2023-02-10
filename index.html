@@ -1,141 +1,258 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Natura Hogar</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portafolio</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/NaturaHogar.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- https://animate.style/ -->
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
 </head>
 <body>
-	<header class="cabecera">
-		<div class="div-menu">
-		<img src="img/bx-menu-alt-right.svg" class="hamburger">
-			<nav class="menu-navegacion spread">
-				<a class="pagina-portafolio" href="#inicio">Home</a>
-				<a class="pagina-portafolio" href="#about">About</a>
-				<a class="pagina-portafolio" href="#servicio">Services</a>
-				<a class="pagina-portafolio" href="#portafolio">Portfolio</a>
-				<a class="pagina-portafolio" href="#contacto">Contact</a>
-			</nav>
+
+	<!-- ALT + SHIFT + flecha para bajo (duplicar)-->
+	<!-- ALT + SHIFT + A (COMENTAR)-->
+	<!-- ALT + flechas para mover cosas-->
+
+	
+	<header>
+
+		<div id="logo">
+			<a href="index.html"><img src="img/NaturaHogar.png" width="220px" class="imagen-logo"></a>
 		</div>
-		<div class="div-logo">
-				<img class="logo" src="img/DSC_7673.jpg" width="150">
+		
+		<!-- TODO: cambiar por menu -->
+		<div class="subMenu">
+
+			<!-- TODO: submenu -->
+			<div class="div-submenu">
+				<!-- TODO: nav-submenu-->
+				<nav class="main-submenu">
+					<ul>
+						<li><a href="index.html">Home | </a></li>
+						<li><a href="./pages/quienesSomos.html">Nosotros | </a></li>
+						<li><a href="./pages/contacto.html">Contacto |</a></li>
+						<li><a href="./pages/servicios.html">Servicios </a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- TODO: menu-->
+			<div class="div-menu">
+				<!-- TODO: nav-menu-->
+				<nav class="main-menu">
+					<ul>
+						<li><a href="./pages/quienesSomos.html">COMPAÑÍA</a></li>
+						<li><a href="./pages/trabajos.html">TRABAJOS</a></li>
+						<li><a href="./pages/servicios.html">SERVICIOS</a></li>
+						<li><a href="./pages/contacto.html">CONTACTO</a></li>
+					</ul>
+				</nav>
+			</div>
+
 		</div>
-		<div class="texto-cabecera">
-				<p class="texto-descripcion">Hi!</p>
-				<h1 class="titulo-descripcion">I'm Borja <b>Marzá</b> </h1>
-				<p class="texto-descripcion">Frontend Developer</p>
-		</div>
-		<br>
+		
 	</header>
+
 	<main>
-				<!--Seccion About-->
-				<div class="div-about">
-				<div class="titulo-about">
-				<h2>About</h2>
-				</div>
-				<div class="texto-about">
-				<p><b class="primer-texto">Who am I?</b><b class="segundo-texto">I'm Borja Marza, Web Developer</b><br><span class="tercer-texto">
-				I am a professional passionate about the digital world, internal management tools within the IT world and the growth of Soft skills. In my projects I execute several activities such as card sorting, surveys, interviews, guerrilla tests, User persona or customer journey, in addition to managing internal management tools such as Asana or Jamboard.I work CMS like WordPress or Shopify for landing page development, also Figma for web application design. I apply knowledge of on-page SEO and off-page SEO in my designs to position them in the first results of the Google search engine.</span></p>
-				</div>
-				<div>
-				<button class="boton-about"><a href="cv/Borja Marzá Martínez CV.pdf" download="cv/Borja Marzá Martínez CV.pdf" class="enlacedescarga">DOWNLOAD MY CV</a></button>
-				</div>
-				</div>
-				<!--Seccion My Skills-->
 
-				<div class="div-myskills">
-				<div class="div-titulomyskills">
-					<p><b>My Skills</b></p>
-				</div>
-				<div class="grid-iconosskills">
-				<img class="iconos-skills" src="img/html_original_logo_icon_146477.png" width="40">
-				<img class="iconos-skills" src="img/git_original_wordmark_logo_icon_146510.png" width="40">
-				<img class="iconos-skills" src="img/javascript_icon_130900.png" width="40">
-				<img class="iconos-skills" src="img/jquery_original_wordmark_logo_icon_146447.png" width="40">
-				<img class="iconos-skills" src="img/file_type_sass_icon_130182.png" width="40">
-				<img class="iconos-skills" src="img/typescript_plain_logo_icon_146316.png" width="40">
-				<img class="iconos-skills" src="img/react_original_wordmark_logo_icon_146375.png" width="40">
-				<img class="iconos-skills" src="img/file_type_vue_icon_130078.png" width="40">
-				</div>
-				</div>
-				<div class="cabeceraservicios">
-				<h2 class="titulo-servicios">Services</h2>
-				<h4 class="subtitulo-servicios">Services I offer to my clients.</h4>
-				</div>
-				<div class="contenedor-servicio">
-					<div class="img-servicios">
-						<div class="div-img-servicios">
-					<img src="img/responsive (3).png" width="40">
-						</div>
-					<b>Fully resoponsive</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-					</div>
-					<div class="img-servicios">		
-						<div class="div-img-servicios">		
-					<img src="img/seo (2).png" width="40">
-						</div>
-					<b>Development</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-					</div>
-					<div class="img-servicios">
-						<div class="div-img-servicios">
-					<img src="img/prototype.png" width="40">
-						</div>
-					<b>Creative Design</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-					</div>
-					<div class="img-servicios">
-						<div class="div-img-servicios">
-					<img src="img/indicador-clave-de-rendimiento.png" width="40">
-						</div>
-					<b>Performance</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-				    </div>
-				    <div class="img-servicios">			
-				    	<div class="div-img-servicios">    
-					<img src="img/seo (1).png" width="40">
-						</div>
-					<b>SEO</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-					</div>
-					<div class="img-servicios">	
-						<div class="div-img-servicios">
-							<img src="img/experiencia-de-usuario.png" width="40">
-						</div>
-					<b>User Experience</b>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rem,Lorem, ipsum dolor sit, amet consectetur adipisicing.
-					</div>
-				</div>
-				<div class="div-git">
-					<h2 class="titulo-git">Portfolio</h2><br>
-					<h4 class="subtitulo-git">Here you can see the projects I have worked on</h4>
-				</div>
-				<div class="div-iconos-git">
-					<div class="div-paginas-git">
-					<img src="img/Captura de pantalla (33).png" width="80">
-					</div>
-					<div class="div-paginas-git">
-					<img src="img/Captura de pantalla (33).png" width="80">
-					</div>
-					<div class="div-paginas-git">
-					<img src="img/Captura de pantalla (33).png" width="80">
-					</div>
-					<div class="div-paginas-git">
-					<img src="img/Captura de pantalla (33).png" width="80">
-					</div>
-				</div>
-				<div class="div-redessociales">
-				<h2 class="tituloformulario">Contact</h2><br>
-				<h4 class="subtituloformulario">Contact me if you want us to work together</h4>
-				</div>
-				<div class="div-iconosredessociales">
-				<a href=""><img src="img/gmail (1).png" width="60px"><b class="mensaje-iconos">Mail me</b></a>
-				<a href=""><img src="img/github-sign.png" width="60px"><b class="mensaje-iconos">Follow me</b></a>
-				<a href=""><img src="img/twitter.png" width="60px"><b class="mensaje-iconos">Follow me</b></a>
-				<a href=""><img src="img/linkedin (1).png" width="60px"><b class="mensaje-iconos">Contact me</b></a>
-				</div>
-	</main>
+		<!-- INICIO SLIDER -->
 
-</body>
-</html>
+		<!-- TODO: Las imágenes tienen que ser rectangulares con la misma altura -->
+		<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp  -->
+		<!-- Incluir desde aqui -->
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade" style="display: none;">
+				<!--<div class="numbertext">1 / 3</div>-->
+				<img src="img/key-2114044_1920.jpg" style="width:100%">
+				<!--<div class="text">Caption Text</div>-->
+			</div>
+
+			<div class="mySlides fade" style="display: none;">
+				<!--<div class="numbertext">2 / 3</div>-->
+				<img src="img/real-estate-1686335__340.jpg" style="width:100%">
+				<!--<div class="text">Caption Two</div>-->
+			</div>
+
+			<div class="mySlides fade" style="display: block;">
+				<!--<div class="numbertext">3 / 3</div>-->
+				<img src="img/house-1353389__340.jpg" style="width:100%">
+				<!--<div class="text">Caption Three</div>-->
+			</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+		<!-- FIN SLIDER -->
+
+		<!-- INICIO Sección introducción -->
+
+		<!-- TODO: MIRAR SI PONER EL TEXTO EN PC EN DOS PARTES -->
+		<!-- Incluir hasta aqui -->
+		<div class="div-descripcionempresa">
+			<h3 class="titulo-descripcion animate__animated animate__bounce">CASAS RURALES</h3>
+			<div class="div-principaldescripcion">
+				<p class="principal-descripcion">Somos un grupo de profesionales Somos un grupo de y gestión de
+					soluciones sostenibles de infraestructuras, especialmente de energía renovable. Nuestra actividad
+				cubre toda la cadena de valor de diseño, construcción, operación y mantenimiento.</p>
+			</div>
+			<div class="div-secundariadescripcion">
+				<p class="secundaria-descripcion">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Incidunt,
+					omnis nostrum porro numquam eius natus quos expedita pariatur, dolore dicta fugit ab ea corrupti.
+				Sint esse, fugit sit assumenda dolores.</p>
+			</div>
+			<div class="div-terciariadescripcion">
+				<p class="terciaria-descripcion">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Repudiandae
+					mollitia dolor sit saepe possimus. Laudantium tempora nulla voluptas quia, beatae, minima nemo
+				itaque cum aperiam voluptates in veniam enim odio.</p>
+			</div>
+			<div class="div-botondescripcion">
+				<a href="./pages/contacto.html">PORQUÉ ES LA DECISIÓN MÁS INTELIGENTE INVERTIR EN EL PLANETA</a>
+				<div class="flecha-roja">
+					<a href="./pages/contacto.html" class="flecha-roja" ><img src="img/flecha-correcta (1).png" width="18px;"></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- FIN Sección introducción -->
+
+
+		<!-- INICIO Sección imágenes -->
+
+		<div class="grid-container">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+			<img class="grid-item imagenAmpliable" src="img/R (4).jpg" alt="imagen3">
+		</div>
+
+		<!-- FIN  Sección imágenes -->
+
+
+		<!-- INICIO precaracteristicas  -->
+
+		<div class="grid-container-carcarteristicas">
+			<div class="icono-caracteristicas">
+				<img src="img/soltar.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Agua</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/termometro.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Calefacción</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/interruptor-de-luz.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Luz</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/lavadora.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Lavadora</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/extintor-de-incendios.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Extintores</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/ventana.png" class="icono-imagen" alt="" width="50px">
+				<p class="texto-iconos">Ventanas</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/wifi.png" class="icono-imagen" width="50px">
+				<p class="texto-iconos">Wifi</p>
+			</div>
+
+			<div class="icono-caracteristicas">
+				<img src="img/balcon.png" class="icono-imagen" width="50px">
+				<p class="texto-iconos">Terraza</p>
+			</div>
+		</div>
+		
+		<!-- FIN precaracteristicas  -->
+
+
+
+		<!-- INICIO expertos-->
+
+		<div class="div-expertos">
+			<h3 class="titulo-expertos">Expertos en alojamiento rural</h3>
+			<p class="texto-expertos">Nuestro sueño de ofrecer al mundo un alojamiento cómodo, agradable y conectado con
+				la naturaleza nos motiva cada día a trabajar en la puesta a punto de nuestras viviendas para disfrute de
+			nuestros huéspedes.</p>
+		</div>
+
+		<!-- FIN expertos -->
+
+		<!-- INICIO FOOTER -->
+		<footer>
+
+			<div id="masInfo">
+
+				<div class="logo-footer">
+					<a href="InicioNaturaHogar.html"><img src="img/NaturaHogar.png" class="imagen-logo" width="220px"></a>
+				</div>
+
+				<div class="titulos-footer">
+					<a href=""><h2 class="enlace-footer">NOTA LEGAL</h2></a>
+					<a href=""><h2 class="enlace-footer">POLÍTICA DE PRIVACIDAD</h2></a>
+					<a href=""><h2 class="enlace-footer">COOKIES</h2></a>
+					<a href=""><h2 class="enlace-footer">MAPA WEB</h2></a>
+					<a href=""><h2 class="enlace-footer">TIEMPO</h2></a>
+				</div>
+				
+			</div>
+
+			
+			<div>
+				<div class="copyright">
+					<span>Copyright © 2022 NATURAHOGAR</span>
+				</div>
+				<div class="socialnetworks">
+					<a href="https://www.linkedin.com/feed/"><img src="img/linkedin (2).png" width="16px" alt=""
+						class="img-socialnetworks"></a>
+						<a href="https://www.youtube.com/"><img src="img/youtube.png" width="16px" alt=""
+							class="img-socialnetworks"></a>
+							<a href="https://twitter.com/"><img src="img/gorjeo.png" width="16px" alt="" class="img-socialnetworks"></a>
+							<a href="https://www.instagram.com/"><img src="img/instagram.png" width="16px" alt=""
+								class="img-socialnetworks"></a>
+								<a href="https://www.facebook.com/"><img src="img/facebook.png" width="16px" alt=""
+									class="img-socialnetworks"></a>
+									<a href="https://www.tiktok.com/"><img src="img/tik-tok.png" width="16px" alt=""
+										class="img-socialnetworks"></a>
+									</div>
+								</div>
+								
+							</footer>
+
+							<!-- FIN FOOTER-->
+
+
+
+						</main>
+
+
+						<script src="js/NaturaHogar.js"></script>
+					</body>
+					</html>

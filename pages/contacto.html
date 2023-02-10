@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Natura Hogar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/NaturaHogar.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- TODO: ¿Separarlo?-->
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+
+</head>
+
+<body>
+	<header>
+
+		<div id="logo">
+			<a href="../index.html"><img src="../img/NaturaHogar.png" width="220px" class="imagen-logo"></a>
+		</div>
+
+		<!-- TODO: cambiar por menu -->
+		<div class="subMenu">
+
+			<!-- TODO: submenu -->
+			<div class="div-submenu">
+				<!-- TODO: nav-submenu-->
+				<nav class="main-submenu">
+					<ul>
+						<li><a href="../index.html">Home | </a></li>
+						<li><a href="../pages/quienesSomos.html">Nosotros| </a></li>
+						<li><a href="../pages/contacto.html">Contacto |</a></li>
+						<li><a href="../pages/servicios.html">Servicios </a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- TODO: menu-->
+			<div class="div-menu">
+				<!-- TODO: nav-menu-->
+				<nav class="main-menu">
+					<ul>
+						<li><a href="../pages/quienesSomos.html">COMPAÑÍA</a></li>
+						<li><a href="../pages/trabajos.html">TRABAJOS</a></li>
+						<li><a href="../pages/servicios.html">SERVICIOS</a></li>
+						<li><a href="../pages/contacto.html">CONTACTO</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+
+	</header>
+
+
+	<div class="portada">
+		<img src="../img/lock-50796_1280.jpg" width="1250px" height="550px">
+	</div>
+
+
+	<div class="migasDePan">
+		<!-- TODO: ¿Le metemos para móvil?-->
+		<div class="migasDePanItem">
+			<img src="../img/distanciamiento-social.png" width="100px">
+		</div>
+		<div class="migasDePanItem">
+			<p>NATURA HOGAR &nbsp; &nbsp; / &nbsp; &nbsp; NUESTRO PROPÓSITO</p>
+			<p>HISTORIA</p>
+		</div>
+		<div class="migasDePanItem">
+			<img src="../img/distanciamiento-social.png" width="50px">
+		</div>
+		<div class="migasDePanItem">
+			<p>MÁS DE 10 AÑOS DE EXPERIENCIA</p>
+		</div>
+		<div class="migasDePanItem">
+			<img src="../img/flecha-izquierda.png" width="20px">
+		</div>
+		<div class="migasDePanItem">
+			<a href="../index.html">VOLVER</a>
+		</div>
+
+	</div>
+
+
+
+	<!-- MAPA-->
+	<div id="map"></div>
+	<script type="text/javascript">
+		var map = L.map('map').setView([40.0416842, -0.0845238], 15);
+
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+
+		var popup = L.popup()
+		.setLatLng([39.26271, -2.92528])
+		.setContent('<a href="https://www.youtube.com/watch?v=YcAW-VbTYnY" target="_blank">La capital del mundo</a>');
+
+		var marker = L.marker([43.26271, -2.92528]).bindPopup(popup).openPopup().addTo(map);
+	</script>
+	<!-- FIN MAPA-->
+
+	<div class="form">
+
+		<h2 class="titulo-form">FORMULARIO DE CONTACTO:</h2>
+
+		<form action="enviar-formulario.php" method="post">
+
+			<div class="cajas-form">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required autofocus placeholder="Escribe tu nombre" />
+			</div>
+			<div class="cajas-form">
+				<label for="email">Email:</label>
+				<input name="email" type="email" required placeholder="Escribe tu email" />
+			</div>
+			<div class="cajas-form">
+				<label for="tel">Teléfono</label>
+				<input class="tel" name="tel" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+			</div>
+			<div class="cajas-form">
+				<label form="cars">Indica el motivo de contacto</label>
+				<select name="navegador" required>
+					<option value="Presupuesto">Presupuesto</option>
+					<option value="Información">Información</option>
+					<option value="Asesoramiento">Asesoramiento</option>
+				</select>
+			</div>
+			<div id="textArea" class="cajas-form">
+				<label for="mensaje">Mensaje:</label>
+				<textarea id="mensaje" name="mensaje" cols="auto" rows="8"
+				style="border: 1px solid rgb(109, 109, 109);"></textarea>
+			</div>
+
+			<div class="centrar-derecha">
+				<input type="submit" value="" style="background-image: url('../img/flecha-correcta (1).png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 25px;
+				height: 50px;
+				border: none;
+				background-color: white;
+				cursor: pointer;" value="">
+			</div>
+
+
+		</form>
+	</div>
+
+	<!-- FIN FORMULARIO -->
+
+	<!-- INICIO VENTAJAS -->
+
+	<div class="ventajas-Natura">
+		
+		<div>
+			<h3>BUSINESS AS UNUSUAL COMO FILOSOFÍA</h3>
+			<p>Hacemos negocio de manera sostenible, contribuyendo positivamente al
+			desarrollo sostenible de la sociedad y el planeta</p>	
+			<img src="../img/flecha-correcta (1).png" width="18px" style="float:right;">
+
+		</div>
+
+		<div>
+			<h3>EXPERTOS EN DISEÑAR UN MUNDO MEJOR</h3>
+			<p>Hacemos negocio de manera sostenible, contribuyendo positivamente al
+			desarrollo sostenible de la sociedad y el planeta</p>	
+			<img src="../img/flecha-correcta (1).png" width="18px" style="float:right;">
+		</div>
+
+		<div>
+			<h3>TRABAJA CON NOSOTROS</h3>
+			<p>Hacemos negocio de manera sostenible, contribuyendo positivamente al
+			desarrollo sostenible de la sociedad y el planeta</p>
+			<img src="../img/flecha-correcta (1).png" width="18px" style="float:right;">
+		</div>
+
+	</div>
+
+	<!-- FIN VENTAJAS -->
+
+
+	<!-- INICIO FOOTER -->
+	<footer>
+
+		<div id="masInfo">
+
+			<div class="logo-footer">
+				<a href="InicioNaturaHogar.html"><img src="../img/NaturaHogar.png" class="imagen-logo" width="220px"></a>
+			</div>
+
+			<div class="titulos-footer">
+				<a><h2 class="enlace-footer">NOTA LEGAL</h2></a>
+				<a><h2 class="enlace-footer">POLÍTICA DE PRIVACIDAD</h2></a>
+				<a><h2 class="enlace-footer">COOKIES</h2></a>
+				<a><h2 class="enlace-footer">MAPA WEB</h2></a>
+				<a><h2 class="enlace-footer">TIEMPO</h2></a>
+			</div>
+
+		</div>
+
+
+		<div>
+			<div class="copyright">
+				<span>Copyright © 2022 NATURAHOGAR</span>
+			</div>
+			<div class="socialnetworks">
+				<a href="https://www.linkedin.com/feed/"><img src="../img/linkedin (2).png" width="16px" alt=""
+					class="img-socialnetworks"></a>
+					<a href="https://www.youtube.com/"><img src="../img/youtube.png" width="16px" alt=""
+						class="img-socialnetworks"></a>
+						<a href="https://twitter.com/"><img src="../img/gorjeo.png" width="16px" alt=""
+							class="img-socialnetworks"></a>
+							<a href="https://www.instagram.com/"><img src="../img/instagram.png" width="16px" alt=""
+								class="img-socialnetworks"></a>
+								<a href="https://www.facebook.com/"><img src="../img/facebook.png" width="16px" alt=""
+									class="img-socialnetworks"></a>
+									<a href="https://www.tiktok.com/"><img src="../img/tik-tok.png" width="16px" alt=""
+										class="img-socialnetworks"></a>
+									</div>
+								</div>
+
+							</footer>
+
+							<!-- FIN FOOTER-->
+							<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+							integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+							crossorigin=""></script>
+							<script src="js/NaturaHogar.js"></script>
+						</body>
+
+						</html>
